@@ -3,7 +3,7 @@
 ## Project Overview
 
 **Project Title**: Retail Sales Analysis    
-**Database**: `retail_sales_project`
+**Database**: `retail_sales_db`
 
 This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries. This project is ideal for those who are starting their journey in data analysis and want to build a solid foundation in SQL.
 
@@ -18,7 +18,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 
 ### 1. Database Setup
 
-- **Database Creation**: The project starts by creating a database named `retail_sales_project`.
+- **Database Creation**: The project starts by creating a database named `retail_sales_db`.
 - **Table Creation**: A table named `retail_sales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
 ```sql
@@ -131,7 +131,7 @@ AND quantity > 3
 AND sale_date >= "2022-11-01"
 AND sale_date < "2022-11-30";
 ```
--- 68 clothing transactions of more than 3 items sold in Nov-2022.
+- 68 clothing transactions of more than 3 items sold in Nov-2022.
 
 
 ### Q.3 Write a SQL query to calculate the total sales (total_sale) for each category.
@@ -141,9 +141,9 @@ SELECT category, SUM(total_sale) AS total_sale_per_cat, COUNT(*) AS total_orders
 FROM retail_sales
 GROUP BY category;
 ```
--- Beauty: 286,270$ total sales, 611 total orders
--- Clothing: 309,995$, 698 total orders
--- Electronics: 311,445$, total orders 
+- Beauty: 286,270$ total sales, 611 total orders
+- Clothing: 309,995$, 698 total orders
+- Electronics: 311,445$, total orders 
 
 ### Q.4 Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.
 
@@ -180,8 +180,8 @@ FROM retail_sales
 GROUP BY year, month
 ORDER BY year DESC;
 ```
--- Best selling month of 2023 was February
--- Best selling monht of 2022 was July
+- Best selling month of 2023 was February
+- Best selling month of 2022 was July
 
 ### Q.8 Write a SQL query to find the top 5 customers based on the highest total sales 
 
