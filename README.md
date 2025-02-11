@@ -55,13 +55,16 @@ CREATE TABLE retail_sales
 ```sql
 SELECT COUNT(*) AS total_sale
 FROM retail_sales;
+```
+- 1987 total sales
 
--- 1987 total sales
-
+```sql
 SELECT COUNT(DISTINCT customer_id) AS num_cust
 FROM retail_sales;
--- 155 total customers
+```
+- 155 total customers
 
+```sql
 SELECT * FROM retail_sales
 WHERE 
 	transactions_id IS NULL
