@@ -156,7 +156,7 @@ FROM retail_sales
 WHERE category = "Beauty"
 GROUP BY category;
 ```
--- Average age of beauty customers is 40.42
+- Average age of beauty customers is 40.42
 
 ### Q. 5 Write a SQL query to find all transactions where the total_sale is greater than 1000.
 
