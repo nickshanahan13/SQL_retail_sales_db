@@ -56,7 +56,7 @@ CREATE TABLE retail_sales
 SELECT COUNT(*) AS total_sale
 FROM retail_sales;
 ```
-- 1987 total sales
+- 1,987 total sales
 
 ```sql
 SELECT COUNT(DISTINCT customer_id) AS num_cust
