@@ -17,7 +17,7 @@
 
 ### 1. Database Setup
 
-- **Database Creation**: `sql_retail_sales_project` is the database beign created. 
+- **Database Creation**: `sql_retail_sales_project` is the database being created. 
 - **Table Creation**: I have created a table named `retail_sales` to store the sales data. Table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
 ```sql
