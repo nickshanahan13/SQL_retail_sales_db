@@ -21,6 +21,9 @@
 - **Table Creation**: I have created a table named `retail_sales` to store the sales data. Table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
 ```sql
+
+-- Create Database
+
 DROP DATABASE IF EXISTS sql_retail_sales_project;
 CREATE DATABASE sql_retail_sales_project;
 USE sql_retail_sales_project;
@@ -231,4 +234,5 @@ GROUP BY shift;
 - **Sales Summary**: A detailed report summarizing total sales, customer demographics, and category performance.
 - **Trend Analysis**: Insights into sales trends across different months and shifts.
 - **Customer Insights**: Reports on top customers and unique customer counts per category.
+
 
